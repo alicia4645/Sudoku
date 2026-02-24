@@ -41,6 +41,16 @@ input{
   color:black;
 }
 
+#grid > *:nth-child(9n+4),
+#grid > *:nth-child(9n+7) {
+  border-left: 3px solid black;
+}
+
+#grid > *:nth-child(n+19):nth-child(-n+27),
+#grid > *:nth-child(n+46):nth-child(-n+54) {
+  border-bottom: 3px solid black;
+}
+
 .fixed{
   font-weight: bold;
 }
