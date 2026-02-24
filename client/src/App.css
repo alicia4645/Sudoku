@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+.app{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 158, 251);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#game{
+  height:90%;
+  width:60%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8)
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: repeat(9, 30px); 
+  margin-bottom:15px;
+}
+
+input{
+  outline:none;
+}
+
+.cell{
+  padding: 0;
+  margin: 0;
+  width:30px;
+  height:30px;
+  text-align: center;
+  border: 1px solid black;
+  color:black;
+}
+
+.fixed{
+  font-weight: bold;
+}
+
+.invalid{
+  color:red;
+}
+
+#message{
+  height:20px;
+}
+
+button{
+  margin: 10px;
+  background-color: rgb(210, 201, 247);
+  border: none;
+  height: 25px;
+}
+
+button:hover{
+  background-color: rgb(177, 158, 251);
+}
